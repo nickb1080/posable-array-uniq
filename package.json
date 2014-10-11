@@ -4,11 +4,6 @@
   "description": "Create an array or array-like without duplicates",
   "license": "MIT",
   "repository": "nickb1080/posable-array-uniq",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
   "engines": {
     "node": ">=0.10.0"
   },
