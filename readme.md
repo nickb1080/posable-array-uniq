@@ -15,15 +15,25 @@ $ npm install --save array-uniq
 ## Usage
 
 ```js
-var arrayUniq = require('array-uniq');
+var arrayUniq = require('array-uniq')();
 
 arrayUniq([1, 1, 2, 3, 3]);
 //=> [1, 2, 3]
 
 arrayUniq(['foo', 'foo', 'bar', 'foo']);
 //=> ['foo', 'bar']
+
+var Collection = require('poser').Array();
+var collectionUniq = require('array-uniq')(Collection);
+var col = new Collection().concat(['foo', 'foo', 'bar', 'foo'])
+
+arrayUniq(col) isntanceof Collection
+//=> false
+collectionUniq(col) instanceof Collection
+//=> true
 ```
 
+This is only necessary when no `Set` implementation exists, because when using `Set`, `array-uniq` delegates to the array's `filter` method.
 
 ## License
 
