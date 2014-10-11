@@ -27,7 +27,7 @@ var Collection = require('poser').Array();
 var collectionUniq = require('array-uniq')(Collection);
 var col = new Collection().concat(['foo', 'foo', 'bar', 'foo'])
 
-arrayUniq(col) isntanceof Collection
+arrayUniq(col) instanceof Collection
 //=> false
 collectionUniq(col) instanceof Collection
 //=> true
