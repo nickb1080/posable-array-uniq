@@ -1,6 +1,6 @@
 {
   "name": "posable-array-uniq",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create an array or array-like without duplicates",
   "license": "MIT",
   "repository": "nickb1080/posable-array-uniq",
