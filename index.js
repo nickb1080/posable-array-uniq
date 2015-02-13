@@ -31,7 +31,7 @@ module.exports = function (ArrayLike) {
 
   // 3 - a standard Set type is defined and it has a forEach method
   function uniqSetWithForEach(arr) {
-    var ret = [];
+    var ret = new ArrayLike();
 
     (new Set(arr)).forEach(function (el) {
       ret.push(el);
